@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 0;
+    margin-top: 20px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    background-color: #eeeed2; /* Light color for the chessboard */
+}
+
+.black {
+    background-color: #769656; /* Dark color for the chessboard */
+}
+
+.highlight {
+    background-color: yellow !important; /* Highlight color for valid squares */
+}
+
+img {
+    width: 45px;
+    height: 45px;
+}
